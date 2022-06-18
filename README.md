@@ -160,9 +160,10 @@ You can run the following commend to evaluate DQN model. The default name of mod
 python dqn-example.py
 ```
 
+### DDPG
+
 You can run the following commend to evaluate DDPG model. The default name of model to evaluate is ddpg.pth.
 
-### DDPG
 ```python
 python ddpg-example.py
 ```
@@ -172,3 +173,9 @@ Then you will get the best result like this, each of the values were the average
 |          | DQN | DDPG |
 |:----------:|:------------:|:-----------------:|
 | average reward | 269.35   | 285.51        |
+
+## Reference
+
+- https://www.gymlibrary.ml/
+- https://arxiv.org/pdf/1312.5602.pdf
+- https://arxiv.org/pdf/1509.02971.pdf
