@@ -25,12 +25,12 @@ GPU: NVIDIA GeForce GTX TITAN X
 
 In this work, you can use the following two option to build the environment.
 
-- ### First option (recommend)
+### First option (recommend)
 
 ```bash=
 $ conda env create -f environment.yml
 ```
-- ### Second option
+### Second option
 
 ```bash=
 $ conda create --name Summer python=3.6 -y
@@ -52,3 +52,88 @@ You can see the detailed algorithm description in [DQN](https://arxiv.org/pdf/13
 </p>
 
 ## Directory Tree
+
+In this project, all you need to do is to git clone this respository. 
+
+You don't need to download another file.
+
+```bash
+├─ dqn-example.py
+├─ ddpg-example.py
+├─ dqn.pth
+├─ ddpg.pth
+├─ environment.yml
+└─ README.md
+
+```
+
+## Training
+
+### DQN
+
+You can config the DQN training parameters through the following argparse, and use the following instructions to train different model.
+
+```python
+## arguments ##
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('-d', '--device', default='cuda')
+parser.add_argument('-m', '--model', default='dqn.pth')
+parser.add_argument('--logdir', default='log/dqn')
+# train
+parser.add_argument('--warmup', default=10000, type=int)
+parser.add_argument('--episode', default=2000, type=int)
+parser.add_argument('--capacity', default=10000, type=int)
+parser.add_argument('--batch_size', default=128, type=int)
+parser.add_argument('--lr', default=.0005, type=float)
+parser.add_argument('--eps_decay', default=.995, type=float)
+parser.add_argument('--eps_min', default=.01, type=float)
+parser.add_argument('--gamma', default=.99, type=float)
+parser.add_argument('--freq', default=4, type=int)
+parser.add_argument('--target_freq', default=1000, type=int)
+# test
+parser.add_argument('--test_only', action='store_true')
+parser.add_argument('--render', action='store_true')
+parser.add_argument('--seed', default=20200519, type=int)
+parser.add_argument('--test_epsilon', default=.001, type=float)
+args = parser.parse_args()
+```
+
+```python
+python dqn-example.py --test_only
+```
+
+### DDPG
+
+You can config the DDPG training parameters through the following argparse, and use the following instructions to train different model.
+
+```python
+## arguments ##
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('-d', '--device', default='cuda')
+parser.add_argument('-m', '--model', default='ddpg.pth')
+parser.add_argument('--logdir', default='log/ddpg')
+# train
+parser.add_argument('--warmup', default=50000, type=int)
+# parser.add_argument('--warmup', default=10000, type=int)
+# parser.add_argument('--episode', default=2000, type=int)
+# parser.add_argument('--batch_size', default=64, type=int)
+parser.add_argument('--episode', default=2800, type=int)
+parser.add_argument('--batch_size', default=128, type=int)
+parser.add_argument('--capacity', default=500000, type=int)
+parser.add_argument('--lra', default=1e-3, type=float)
+parser.add_argument('--lrc', default=1e-3, type=float)
+parser.add_argument('--gamma', default=.99, type=float)
+parser.add_argument('--tau', default=.005, type=float)
+# test
+parser.add_argument('--test_only', action='store_true')
+parser.add_argument('--render', action='store_true')
+parser.add_argument('--seed', default=20200519, type=int)
+args = parser.parse_args()
+```
+
+```python
+python ddpg-example.py --test_only
+```
+
+## Testing
+
