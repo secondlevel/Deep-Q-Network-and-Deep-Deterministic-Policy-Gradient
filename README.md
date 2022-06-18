@@ -1,6 +1,6 @@
 # Deep-Q-Network-and-Deep-Deterministic-Policy-Gradient (Deep Learning and Practice homework 6)
 
-The demo video can be seen in this [link](https://www.youtube.com/watch?v=JWXbZfipZzw)
+**The demo video can be seen in this [link](https://www.youtube.com/watch?v=JWXbZfipZzw)**
 
 This task is to implement two deep reinforcement algorithms by completing the following two tasks: 
 
@@ -8,8 +8,10 @@ This task is to implement two deep reinforcement algorithms by completing the fo
 
 **(2) solve LunarLanderContinuous-v2 using deep deterministic policy gradient (DDPG).**  
 
+<br>
+
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/174265296-e973019d-f29a-4333-adbc-6937edfef1b2.png" title="dqn and ddpg" width="40%" height=40%" hspace="250"/>
+  <img src="https://user-images.githubusercontent.com/44439517/174265296-e973019d-f29a-4333-adbc-6937edfef1b2.png" title="dqn and ddpg" width="50%" height=40%" hspace="250"/>
 </p>
 
 ## Hardware
@@ -21,14 +23,14 @@ GPU: NVIDIA GeForce GTX TITAN X
 
 ## Requirement
 
-In this work, you can use the following two option to rebuild the environment.
+In this work, you can use the following two option to build the environment.
 
-- #### First option(recommend)
+- ### First option (recommend)
 
 ```bash=
 $ conda env create -f environment.yml
 ```
-- #### Second option(recommend)
+- ### Second option
 
 ```bash=
 $ conda create --name Summer python=3.6 -y
@@ -40,3 +42,13 @@ $ conda install pandas -y
 $ pip install torchsummary
 $ pip install gym
 ```
+
+## System Architecture
+
+You can see the detailed algorithm description in [DQN](https://arxiv.org/pdf/1312.5602.pdf) and [DDPG](https://arxiv.org/pdf/1509.02971.pdf).
+
+<p float="center">
+  <img src="https://user-images.githubusercontent.com/44439517/174431417-e8a38de9-3cfe-405e-a416-e6e210bd0b6b.png" title="dqn and ddpg" width="70%" height=70%" hspace="150"/>
+</p>
+
+## Directory Tree
