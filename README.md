@@ -63,6 +63,7 @@ You don't need to download another file.
 ├─ dqn.pth
 ├─ ddpg.pth
 ├─ environment.yml
+├─ report.pdf
 └─ README.md
 
 ```
