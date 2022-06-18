@@ -154,12 +154,21 @@ In the training step, you also can evaluate two different model like DQN and DDP
 
 ### DQN
 
+You can run the following commend to evaluate DQN model. The default name of model to evaluate is dqn.pth.
+
 ```python
 python dqn-example.py
 ```
+
+You can run the following commend to evaluate DDPG model. The default name of model to evaluate is ddpg.pth.
 
 ### DDPG
 ```python
 python ddpg-example.py
 ```
 
+Then you will get the best result like this, each of the values were the average reward in ten times.
+
+|          | DQN | DDPG |
+|:----------:|:------------:|:-----------------:|
+| average reward | 269.35   | 285.51        |
