@@ -70,6 +70,8 @@ You don't need to download another file.
 
 ## Training
 
+In the training step, you can train two different model like DQN and DDPG.
+
 ### DQN
 
 There have two step to train the DQN model.
@@ -146,4 +148,18 @@ python ddpg-example.py --test_only
 
 ## Testing
 
-You can get some detailed introduction and experimental results in this link.
+You can get some detailed introduction and experimental results in this [link](https://github.com/secondlevel/Deep-Q-Network-and-Deep-Deterministic-Policy-Gradient/blob/main/report.pdf).
+
+In the training step, you also can evaluate two different model like DQN and DDPG.
+
+### DQN
+
+```python
+python dqn-example.py
+```
+
+### DDPG
+```python
+python ddpg-example.py
+```
+
