@@ -9,7 +9,7 @@ This task is to implement two deep reinforcement algorithms by completing the fo
 **(2) solve LunarLanderContinuous-v2 using deep deterministic policy gradient (DDPG).**  
 
 <p float="center">
-  <img src="https://user-images.githubusercontent.com/44439517/174265296-e973019d-f29a-4333-adbc-6937edfef1b2.png" title="dqn and ddpg" width="50%" height=50%" hspace="150"/>
+  <img src="https://user-images.githubusercontent.com/44439517/174265296-e973019d-f29a-4333-adbc-6937edfef1b2.png" title="dqn and ddpg" width="40%" height=40%" hspace="250"/>
 </p>
 
 ## Hardware
