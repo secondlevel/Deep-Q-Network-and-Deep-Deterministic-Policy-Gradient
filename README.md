@@ -71,7 +71,9 @@ You don't need to download another file.
 
 ### DQN
 
-You can config the DQN training parameters through the following argparse, and use the following instructions to train different model.
+There have two step to train the DQN model.
+
+The first step is config the DQN training parameters through the following argparse.
 
 ```python
 ## arguments ##
@@ -98,13 +100,17 @@ parser.add_argument('--test_epsilon', default=.001, type=float)
 args = parser.parse_args()
 ```
 
+The second step is run the commend below.
+
 ```python
 python dqn-example.py --test_only
 ```
 
 ### DDPG
 
-You can config the DDPG training parameters through the following argparse, and use the following instructions to train different model.
+There have two step to train the DDPG model.
+
+The first step is config the DDPG training parameters through the following argparse.
 
 ```python
 ## arguments ##
@@ -131,9 +137,12 @@ parser.add_argument('--seed', default=20200519, type=int)
 args = parser.parse_args()
 ```
 
+The second step is run the commend below.
+
 ```python
 python ddpg-example.py --test_only
 ```
 
 ## Testing
 
+You can get some detailed introduction and experimental results in this link.
