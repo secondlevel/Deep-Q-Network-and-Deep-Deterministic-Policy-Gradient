@@ -2,6 +2,8 @@
 
 **The demo video can be seen in this [link](https://www.youtube.com/watch?v=JWXbZfipZzw)**
 
+You can get some detailed introduction and experimental results in this [link](https://github.com/secondlevel/Deep-Q-Network-and-Deep-Deterministic-Policy-Gradient/blob/main/report.pdf).
+
 This task is to implement two deep reinforcement algorithms by completing the following two tasks: 
 
 **(1) solve LunarLander-v2 using deep Q-network (DQN)**  
