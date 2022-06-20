@@ -105,7 +105,7 @@ parser.add_argument('--test_epsilon', default=.001, type=float)
 args = parser.parse_args()
 ```
 
-The second step is run the commend below.
+The second step is run the command below.
 
 ```python
 python dqn-example.py --test_only
@@ -139,7 +139,7 @@ parser.add_argument('--seed', default=20200519, type=int)
 args = parser.parse_args()
 ```
 
-The second step is run the commend below.
+The second step is run the command below.
 
 ```python
 python ddpg-example.py --test_only
@@ -182,7 +182,7 @@ parser.add_argument('--test_epsilon', default=.001, type=float)
 args = parser.parse_args()
 ```
 
-The second step is run the commend below.
+The second step is run the command below.
 
 ```python
 python dqn-example.py
@@ -216,7 +216,7 @@ parser.add_argument('--seed', default=20200519, type=int)
 args = parser.parse_args()
 ```
 
-The second step is run the commend below.
+The second step is run the command below.
 
 ```python
 python ddpg-example.py
